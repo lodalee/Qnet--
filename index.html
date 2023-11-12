@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Q-net</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+</head>
+
+<body>
+<header>
+<div class="wrap">
+    
+    <div class="wrap_top">
+    <div class="logo">
+        <a href="#"><img src="images/logo.jpg" alt="logo"></a>
+    </div><!-- logo end -->
+
+    <div class="search">
+        <input type="text" placeholder="검색어 입력">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+    </div><!-- search end -->
+
+    <nav class="Topmenu">
+        <ul class="topnavi">
+            <li><a href="#">로그인 /</a></li>
+            <li><a href="#">회원가입 /</a></li>
+            <li><a href="#">수험생 유의사항 /</a></li>
+            <li><a href="#">기관소개</a></li>
+        </ul><!-- topnavi end -->
+    </nav><!-- Topmenu end -->
+    </div><!-- wrap_top end -->
+
+    <div class="wrap_main">
+    <div class="menu_bg"></div>
+    <nav class="main_menu">
+        <ul class="navi">
+            <li><a href="#">국가자격시험</a>
+                <ul class="submenu">
+                    <li><a href="#">원서접수</a></li>
+                    <li><a href="#">합격자/답안발표</a></li>
+                    <li><a href="#">시험일정</a></li>
+                    <li><a href="#">필기시험안내</a></li> 
+                    <li><a href="#">실기시험안내</a></li>
+                    <li><a href="#">자격정보</a></li> 
+                    <li><a href="#">자격검정통계</a></li>
+                    <li><a href="#">국가기술자격 대여 근절 캠페인</a></li>  
+                    <li><a href="#">과정평가형 자격</a></li>
+                    <li><a href="#">자격 취득자 교육훈련</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">전문자격시험</a>
+                <ul class="submenu2">
+                    <li><a href="#">가맹거래사</a></li>
+                    <li><a href="#">감정사</a></li>
+                    <li><a href="#">감정평가사</a></li>
+                    <li><a href="#">검량사</a></li> 
+                    <li><a href="#">검수사</a></li>
+                    <li><a href="#">경매사</a></li> 
+                    <li><a href="#">경비지도사</a></li>
+                    <li><a href="#">경영지도사</a></li>  
+                    <li><a href="#">공인노무사</a></li>
+                    <li><a href="#">공인중개사</a></li>
+                    <li><a href="#">관광통역안내사</a></li>
+                    <li><a href="#">관세사</a></li>
+                    <li><a href="#">국내여행안내사</a></li>
+                    <li><a href="#">기술지도사</a></li>
+                <div class="submenu2 sub2">
+                    <li><a href="#">농산물품질관리사</a></li>
+                    <li><a href="#">문화재수리기능자</a></li>
+                    <li><a href="#">문화재수리기술자</a></li>
+                    <li><a href="#">물류관리사</a></li>
+                    <li><a href="#">박물관 및 미술관 준학예사</a></li>
+                    <li><a href="#">변리사</a></li>
+                    <li><a href="#">사회복지사 1급</a></li>
+                    <li><a href="#">산업보건지도사</a></li>
+                    <li><a href="#">세무사</a></li>
+                    <li><a href="#">소방시설관리사</a></li>
+                    <li><a href="#">소방안전교육사</a></li>
+                    <li><a href="#">손해평가사</a></li>
+                    <li><a href="#">수산물품질관리사</a></li>
+                    <li><a href="#">정수시설운용관리사</a></li>
+                </div>
+                <div class="submenu2 sub3">
+                    <li><a href="#">주택관리사보</a></li>
+                    <li><a href="#">청소년상담사</a></li>
+                    <li><a href="#">청소년지도사</a></li>
+                    <li><a href="#">한국어교육능력검정시험</a></li>
+                    <li><a href="#">행정사</a></li>
+                    <li><a href="#">호텔경영사</a></li>
+                    <li><a href="#">호텔관리사</a></li>
+                    <li><a href="#">호텔서비스사</a></li>
+                </div>
+                </ul>
+            </li>
+
+            <li><a href="#">자격증/확인서</a>
+                <ul class="submenu submenu2">
+                    <li><a href="#">자격증발급안내</a></li>
+                    <li><a href="#">자격증발급</a></li>
+                    <li><a href="#">확인서발급</a></li>
+                    <li><a href="#">자격취득/미발급조회</a></li> 
+                    <li><a href="#">자격증/확인서진위확인</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">마이페이지</a>
+                <ul class="submenu submenu2">
+                    <li><a href="#">원서접수관리</a></li>
+                    <li><a href="#">응시자격</a></li>
+                    <li><a href="#">자격증취득조회</a></li>
+                    <li><a href="#">발급조회현황</a></li> 
+                    <li><a href="#">면제정보보기</a></li>
+                    <li><a href="#">개인정보관리</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">고객지원</a>
+                <ul class="submenu submenu2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">고객참여</a></li>
+                    <li><a href="#">자료실</a></li> 
+                    <li><a href="#">환불안내</a></li>
+                    <li><a href="#">가치드림방</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">부정신고센터</a></li>
+                    <li><a href="#">자격증 불법대여 신고</a></li>
+                    <li><a href="#">원격지원</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><!-- main_menu end -->
+    </div><!-- wrap_main end -->
+</div><!-- wrap end -->
+</header>
+
+
+<div class="imgslide_bg"></div>
+<div class="imgslide">
+    <a href="#"><img src="/images/slide1.jpg" alt=""></a>
+    <a href="#"><img src="/" alt=""></a>
+    <a href="#"><img src="" alt=""></a>
+    <a href="#"><img src="" alt=""></a>
+<div class="imgslide_menu menubox1">
+    <a href="#"><img src="/images/link_top_new_01.gif"></a>
+    <h4>원서접수</h4><p>국가기술전문자격</p>
+</div>
+<div class="imgslide_menu menubox2">
+    <a href="#"><img src="/images/link_top_new_02.gif"></a>
+    <h4>합격자/답안발표</h4><p>개인득점조회</p>
+</div>
+<div class="imgslide_menu menubox3">
+    <a href="#"><img src="/images/link_top_new_03.gif"></a>
+    <h4>자격증신청</h4><p>상장형·수첩형</p>
+</div>
+<div class="imgslide_menu menubox4">
+    <a href="#"><img src="/images/link_top_new_04.gif"></a>
+    <h4>시험일정안내</h4><p>국가기술·전문자격</p>
+</div>
+</div>
+
+<div class="wrap_icon">
+    <ul class="icon">
+        <li><a href="#"><img src="/images/icon1.png"></a><p>자격정보</p></li>
+        <li><a href="#"><img src="/images/icon2.png"></a><p>응시자격</p></li>
+        <li><a href="#"><img src="/images/icon3.png"></a><p>응시자격자가진단</p></li>
+        <li><a href="#"><img src="/images/icon4.png"></a><p>원서접수현황</p></li>
+        <li><a href="#"><img src="/images/icon5.png"></a><p>확인서신청</p></li>
+        <li><a href="#"><img src="/images/icon1.png"></a><p>수험자준비물</p></li>
+        <li><a href="#"><img src="/images/icon2.png"></a><p>자료실</p></li>
+        <li><a href="#"><img src="/images/icon3.png"></a><p>환불정보</p></li>
+    </ul>
+</div>   
+
+<div class="contents">
+    <div class="register">
+        <ul>
+            <p>원서접수중인시험</p>
+            <br>
+            <li><a href="#">
+                2023년 상시 기능사 8회 실기
+                <span>접수 :2023. 04. 20~2023. 04. 21</span>
+            </a></li>
+            <li><a href="#">
+                2023년 제 9회 수산물품질관리사 1차
+                <span>접수 :2023. 04. 17~2023. 04. 21</span>
+            </a></li>
+            <li><a href="#">
+                2023년 제 33회 정수시설운영관리사 1,2차
+                <span>접수 :2023. 04. 20~2023. 04. 21</span>
+            </a></li>
+        </ul>
+    </div><!-- register end -->
+
+    <dl id="tabmenu">
+        <dt class="tab_btn1 on">
+           <a href="#">공지사항</a>
+        </dt>
+        <dd>
+            <ul>
+            <li><a href="#">
+                가상시험장 접수 수험자의 장소변경서비스 이용 안내
+                <span>2023.03.03</span>
+            </a></li>
+            <li><a href="#">
+                2023년 정기 기사 제2회 필기시험 원서접수 관련 주요 안내사항
+                <span>2023.04.11</span>
+            </a></li>
+            <li><a href="#">
+                국가자격시험 응시수수료 사후환불 관련 안내
+                <span>2023.04.11</span>
+            </a></li>
+            <li><a href="#">
+                국가기술자격시험 출제 전문인력 발굴을 위한 위원 공모
+                <span>2023.04.11</span>
+            </a></li>
+            <li><a href="#">
+                2023년 수시검정 제1회 시행공고
+                <span>2023.04.05</span>
+            </a></li>
+            <li><a href="#">
+                ['23.1.30 수정] 미용사(피부, 메이크업) 실기시험
+                <span>2023.01.27</span>
+            </a></li>
+            <li><a href="#">
+                2023년도 국가기술자격 상시검정 시행계획 공고
+                <span>2022.12.28</span>
+            </a></li>
+            </ul>
+        </dd>
+   
+         <dt class="tab_btn2">
+           <a href="#">자격제도</a>
+        </dt>
+        <dd>
+            <ul>
+                <li><a href="#">
+                    【동일유사교과목】여성가족부령이 정하는 ‘상담관련분야’
+                    <span>2023.03.03</span>
+                </a></li>
+                <li><a href="#">
+                    2020년도 국가자격 취득자 수기공모 우수사례집
+                    <span>2021.03.03</span>
+                </a></li>
+                <li><a href="#">
+                    2019년도 국가자격 취득자 수기공모전 우수사례집
+                    <span>2020.03.03</span>
+                </a></li>
+            </ul>
+        </dd>
+   
+         <dt class="tab_btn3">
+           <a href="#">출제</a>
+         </dt>
+        <dd>
+          <ul>
+            <li><a href="#">
+                국가기술자격시험 출제 전문인력 발굴을 위한 위원 공모
+                <span>2023.03.03</span>
+            </a></li>
+            <li><a href="#">
+                패션디자인산업기사 시험 변경 안내
+                <span>2023.04.11</span>
+            </a></li>
+            <li><a href="#">
+                2023년 의류기사 시험 변경 안내
+                <span>2023.04.11</span>
+            </a></li>
+            <li><a href="#">
+                2023년 신설종목 한복기능장 필기시험 및 실기시험 안내
+                <span>2023.04.11</span>
+            </a></li>
+            <li><a href="#">
+                2023년 의료전자기능사 실기시험 변경사항 안내
+                <span>2023.04.05</span>
+            </a></li>
+            <li><a href="#">
+                2022년 토목분야(산업기사, 기능사) 실기시험 평가방법 변경사항 안내
+                <span>2023.01.27</span>
+            </a></li>
+            <li><a href="#">
+                2023년 귀금속가공사, 귀금속가공기능사 실기시험 변경 안내
+                <span>2022.12.28</span>
+            </a></li>
+          </ul>
+         </dd>
+         <div class="bt1"><button><a href="#">+</a></button></div>
+      </dl>
+      </div>
+</div><!-- contents end -->
+
+<div class="contents2">
+    <div class="call">
+    <ul>
+        <li class="inquire">
+            <a href="#">
+                <img src="">
+                <p>1:1문의</p>
+            </a>
+        </li>
+
+        <li class="faq">
+            <a href="#">
+                <img src="">
+                <p>자주찾는 질문(FAQ)</p>
+            </a>
+        </li>
+    </ul>
+    </div><!-- call end -->
+
+    <div class="qnetmove">
+        <a href="#">
+        <img src="/images/cqnetMove.jpg">
+        </a>
+    </div>
+</div><!-- contents2 end -->
+</body>
+
+<footer>
+    
+    <div class="wrap">
+        <div class="site_bg"></div>
+        <div class="site">
+            <ul class="navi_bt">
+                <li><a href="#"><span>개인정보처리방침</span></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+            </ul>
+            <div class="familysite">
+                <select name="sitelist">
+                    <option value="#">관련사이트</option>
+                    <option value="#">공단홈페이지</option>
+                    <option value="#">한국직업방송</option>
+                    <option value="#">WORLD JOB 해외취업및연수</option>
+                    <option value="#">마이스터넷</option>
+                    <option value="#">과정평가형.일학습병행 외부평가시스템</option>
+                    <option value="#">외국인고용허가제</option>
+                </select>
+                <select name="sitelist2">
+                    <option value="#">국가전문자격홈페이지</option>
+                    <option value="#">가맹거래사</option>
+                    <option value="#">감정사</option>
+                    <option value="#">감정평가사</option>
+                    <option value="#">검량사</option>
+                    <option value="#">검수사</option>
+                    <option value="#">경매사</option>
+                    <option value="#">경비지도사</option>
+                    <option value="#">경영지도사</option>
+                    <option value="#">공인중개사</option>
+                    <option value="#">관광통역안내사</option>
+                    <option value="#">관세사</option>
+                    <option value="#">국내여행안내사</option>
+                    <option value="#">기술지도사</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="btn_dqc">
+            <ul>
+                <li><a href="#"><img src="/images/btn_wa.jpg"></a></li>
+                <li><a href="#"><img src="/images/app_award.jpg"></a></li>
+                <li><a href="#"><img src="/images/gongdata.jpg"></a></li>
+                <li><a href="#"><img src="/images/btn_dqc_2016.jpg"></a></li>
+                <li><a href="#"><img src="/images/btn_dqc.jpg"></a></li>
+            </ul>
+        </div>
+
+        <div class="copy">
+            <div class="footerlogo">
+                <img src="/images/footer_logo.gif">
+            </div>
+                <div class="copyp">
+                    울산광역시 중구 종가로 345 한국산업인력공단 (우)44538 ☏1644 - 8000<br>
+                    Copyright ⓒ 1999~2015 All Rights Reserved. Human Resources Development Service of Korea.
+                </div>
+                <div class="copyp2">
+                    <a href="#">[국가기술자격 응시자격서류 제출 주소 등 안내]</a>
+                </div>
+        </div>
+    </div>
+</footer>
+</html>
